@@ -28,7 +28,7 @@
         <!--Initial View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="StoryboardExample" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="InitialViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="InitialViewController" customModule="StoryboardExample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -38,10 +38,13 @@
                     <navigationItem key="navigationItem" title="Initial View Controller" id="qga-LK-j8N">
                         <barButtonItem key="rightBarButtonItem" title="Next" id="Av6-ys-Y8U">
                             <connections>
-                                <segue destination="RvP-87-1aI" kind="show" id="QDH-iF-flS"/>
+                                <action selector="nextButtonPressed:" destination="BYZ-38-t0r" id="Px4-zU-Xj3"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <segue destination="RvP-87-1aI" kind="show" id="KBk-D5-Ti5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -50,7 +53,7 @@
         <!--Next View Controller-->
         <scene sceneID="wkM-f0-WfM">
             <objects>
-                <viewController title="Next View Controller" id="RvP-87-1aI" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NextViewController" title="Next View Controller" useStoryboardIdentifierAsRestorationIdentifier="YES" id="RvP-87-1aI" customClass="NextViewController" customModule="StoryboardExample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ehW-gt-TpR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
