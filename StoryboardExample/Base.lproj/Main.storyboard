@@ -35,11 +35,32 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Initial View Controller" id="qga-LK-j8N"/>
+                    <navigationItem key="navigationItem" title="Initial View Controller" id="qga-LK-j8N">
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="Av6-ys-Y8U">
+                            <connections>
+                                <segue destination="RvP-87-1aI" kind="show" id="QDH-iF-flS"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-255" y="41"/>
+        </scene>
+        <!--Next View Controller-->
+        <scene sceneID="wkM-f0-WfM">
+            <objects>
+                <viewController title="Next View Controller" id="RvP-87-1aI" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ehW-gt-TpR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="p6z-Zj-KkD"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zgV-Ht-He5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="682" y="41"/>
         </scene>
     </scenes>
 </document>
